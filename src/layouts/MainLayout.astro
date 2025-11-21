@@ -1,4 +1,5 @@
 ---
+import '../styles/main.css';
 interface Props {
   title: string;
   description?: string;
@@ -29,14 +30,12 @@ const {
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="/src/main.css" />
+    <script>
+      import '../scripts/portofolio.ts';
+    </script>
   </head>
+
   <body>
     <slot />
-
-    <!-- Scripts -->
-    <script src="/src/scripts/portofolio.ts"></script>
   </body>
 </html>
